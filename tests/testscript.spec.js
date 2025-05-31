@@ -1,7 +1,7 @@
-const {test,expect} = require ('@playwright/test');
-import {login} from "./helper.spec";
+import { test, expect } from '@playwright/test';
+const { login } = require('./helper/helper'); // assume helper.js is in the same directory
 
-test('First Page',async ({page}) => {
-    await login(page, "aswin_syras", "Aswinsyras@1231");
-    //comments added
-})
+test('First Page', async ({ page }) => {
+    await login(page, "aswin_syras", "Aswinsyras@123123");
+    // Add assertions or interactions here
+});
